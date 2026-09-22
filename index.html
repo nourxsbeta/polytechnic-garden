@@ -26,14 +26,44 @@
   </header>
 
   <main class="site-main" id="main-content">
-    <div class="container">
-      <section class="section u-text-center" aria-labelledby="welcome-title">
-        <h1 id="welcome-title">Welcome to the Polytechnic Community Garden</h1>
-        <p>
-          Find garden hours, volunteer opportunities, workshop information,
-          accessibility details, and ways to contact the garden.
-        </p>
-      </section>
+    <section class="hero section" aria-labelledby="welcome-title">
+  <div class="hero-content">
+    <h1 id="welcome-title">Welcome to the Polytechnic Community Garden</h1>
+
+    <p>
+      Find garden hours, volunteer opportunities, workshop information,
+      accessibility details, and ways to contact the garden.
+    </p>
+  </div>
+
+  <figure class="hero-image">
+
+    <!--
+    Hero image
+    Source: Unsplash
+    Photographer: [Name]
+    License: Unsplash License
+    Three responsive sizes:
+    400px, 800px, 1200px
+    -->
+
+    <img
+      src="assets/footpath_800.jpg"
+      srcset="
+        assets/footpath_400.jpg 400w,
+        assets/footpath_800.jpg 800w,
+        assets/footpath_1200.jpg 1200w"
+      sizes="(max-width: 768px) 100vw, 50vw"
+      width="1200"
+      height="800"
+      alt="Pathway of greenery">
+
+    <figcaption class="u-visually-hidden">
+      Volunteers working in the Polytechnic Community Garden.
+    </figcaption>
+
+  </figure>
+</section>
 
       <section class="section" aria-labelledby="highlights-title">
         <h2 id="highlights-title">Garden Information</h2>
