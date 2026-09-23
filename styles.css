@@ -236,6 +236,22 @@
    background: var(--color-primary-900); 
    color: var(--color-background);
   }
+  .hero {
+   display: grid;
+   gap: var(--space-5);
+   justify-items: center;
+  }
+ 
+ .hero-content {
+   text-align: center;
+   max-width: 70ch;
+  }
+ 
+ .hero-image img {
+   max-width: 100%;
+   height: auto;
+   border-radius: var(--radius-md);
+  }
  
   .site-header__inner { 
    display: flex; 
