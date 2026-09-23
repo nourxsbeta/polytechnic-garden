@@ -53,21 +53,24 @@
   }
 }
 
-/* ===== FONT LOADING =====
-   Fonts:
-   - Fira Sans
-   - Sansation
+/* ===== WEB FONTS =====
    Source: Google Fonts
    License: SIL Open Font License 1.1
-   Loading strategy:
-   - Self-hosted WOFF2 files
-   - font-display: swap to minimize layout shift
-   - System font fallbacks provided
+   Format: WOFF2
+   Loading: font-display: swap
 */
 
 @font-face {
   font-family: "Fira Sans";
-  src: url("fonts/FiraSans-Regular.woff2") format("woff2");
+  src: url("assets/fonts/FiraSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("assets/fonts/FiraSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -75,15 +78,15 @@
 
 @font-face {
   font-family: "Fira Sans";
-  src: url("fonts/FiraSans-SemiBold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("assets/fonts/FiraSans-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Fira Sans";
-  src: url("fonts/FiraSans-Bold.woff2") format("woff2");
+  src: url("assets/fonts/FiraSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -91,7 +94,15 @@
 
 @font-face {
   font-family: "Sansation";
-  src: url("fonts/Sansation-Regular.woff2") format("woff2");
+  src: url("assets/fonts/Sansation-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("assets/fonts/Sansation-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -99,11 +110,12 @@
 
 @font-face {
   font-family: "Sansation";
-  src: url("fonts/Sansation-Bold.woff2") format("woff2");
+  src: url("assets/fonts/Sansation-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
 /* ===== BASE ===== */
 @layer base {
   :root {
