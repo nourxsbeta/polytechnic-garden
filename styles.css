@@ -133,6 +133,7 @@
     --color-error: #a32929;
     --color-success: #28613d;
     --font-family-base: "Fira Sans", Arial, Helvetica, sans-serif;
+    --font-family-heading: "Sansation", Arial, Helvetica, sans-serif;
     --font-size-sm: .875rem;
     --font-size-base: 1rem;
     --font-size-md: 1.125rem;
@@ -265,6 +266,7 @@
    border-radius: var(--radius-sm); 
    color: inherit; 
    text-decoration: none; 
+   font-weight:500;
   }
  
   .card { 
