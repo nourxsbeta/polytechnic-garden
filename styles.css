@@ -53,7 +53,57 @@
   }
 }
 
+/* ===== FONT LOADING =====
+   Fonts:
+   - Fira Sans
+   - Sansation
+   Source: Google Fonts
+   License: SIL Open Font License 1.1
+   Loading strategy:
+   - Self-hosted WOFF2 files
+   - font-display: swap to minimize layout shift
+   - System font fallbacks provided
+*/
 
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("fonts/Sansation-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("fonts/Sansation-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 /* ===== BASE ===== */
 @layer base {
   :root {
@@ -70,7 +120,7 @@
     --color-border: #c9d0ca;
     --color-error: #a32929;
     --color-success: #28613d;
-    --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-family-base: "Fira Sans", Arial, Helvetica, sans-serif;
     --font-size-sm: .875rem;
     --font-size-base: 1rem;
     --font-size-md: 1.125rem;
@@ -101,8 +151,17 @@
     --card-padding: var(--space-5);
   }
   html { color-scheme: light; scroll-behavior: smooth; }
-  body { min-height: 100vh; background: var(--color-background); color: var(--color-text); font-family: var(--font-family-base); font-size: var(--font-size-base); line-height: var(--line-height-base); }
-  h1, h2, h3 { color: var(--color-primary-900); line-height: var(--line-height-tight); }
+  body {
+   min-height: 100vh;
+   background: var(--color-background); 
+   color: var(--color-text); 
+   font-family: var(--font-family-base); font-size: var(--font-size-base); line-height: var(--line-height-base); }
+  h1, h2, h3 { 
+   font-family: var(--font-family-heading);
+   color: var(--color-primary-900);
+   line-height: var(--line-height-tight);
+}
+  }
   h1 { font-size: var(--font-size-2xl); }
   h2 { font-size: var(--font-size-xl); }
   h3 { font-size: var(--font-size-lg); }
