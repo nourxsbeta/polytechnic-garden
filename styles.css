@@ -169,19 +169,22 @@
    background: var(--color-background); 
    color: var(--color-text); 
    font-family: var(--font-family-base); font-size: var(--font-size-base); line-height: var(--line-height-base); }
+  
   h1, h2, h3 { 
    font-family: var(--font-family-heading);
    color: var(--color-primary-900);
    line-height: var(--line-height-tight);
-}
-  }
+    }
+  
   h1 { font-size: var(--font-size-2xl); }
   h2 { font-size: var(--font-size-xl); }
   h3 { font-size: var(--font-size-lg); }
   p { max-width: 70ch; }
-  a { color: var(--color-primary-700); text-decoration-thickness: .1em; text-underline-offset: .15em; }
+  
+  a { 
+    color: var(--color-primary-700); text-decoration-thickness: .1em; text-underline-offset: .15em; 
+  }
 }
-
 
 /* ===== LAYOUT ===== */
 @layer layout {
@@ -294,6 +297,14 @@
  
   .card > * + * { 
    margin-top: var(--space-3); 
+  }
+
+  @supports (container-type:inline-size){
+
+    .card-grid{
+      container-type:inline-size;
+    }
+
   }
 
  @container (min-width:30rem){
@@ -512,13 +523,6 @@
 @layer overrides {
 }
 
-@supports (container-type:inline-size){
-
-.card{
-    container-type:inline-size;
-}
-
-}
 
 /* ===== PRINT ===== */
 @media (prefers-reduced-motion: reduce){
@@ -679,4 +683,5 @@
   .contact-form .button {
     width: 100%;
   }
+
 }
