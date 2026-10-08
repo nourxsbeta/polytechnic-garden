@@ -1,78 +1,59 @@
-Polytechnic Community Garden
+# Polytechnic Community Garden
 
 A responsive and accessible informational website created for the GIT 414 Production Website Capstone.
 
-Live Site
+## Live Site
 
 https://nourxsbeta.github.io/polytechnic-garden/
 
-Project Purpose
+## Project Purpose
 
 The website provides visitors with information about the Polytechnic Community Garden, including its purpose, community involvement, and ways to contact the garden.
 
-Final Pages
+## Final Pages
 
-Home
+- Home
+- About
+- Contact
 
-About
+## Built With
 
-Contact
+- HTML5
+- CSS
+- Responsive images
+- CSS Grid and Flexbox
+- Container queries
+- GitHub Pages
 
-Built With
+## Key Features
 
-HTML5
+- Responsive layout
+- Semantic HTML
+- Accessible navigation and forms
+- Keyboard-visible focus
+- Responsive WebP images
+- Page titles and meta descriptions
+- Canonical and Open Graph metadata
 
-CSS
-
-Responsive images
-
-CSS Grid and Flexbox
-
-Container queries
-
-GitHub Pages
-
-Key Features
-
-Responsive layout
-
-Semantic HTML
-
-Accessible navigation and forms
-
-Keyboard-visible focus
-
-Responsive WebP images
-
-Page titles and meta descriptions
-
-Canonical and Open Graph metadata
-
-Testing
+## Testing
 
 The website was tested for:
 
-HTML and CSS validation
+- HTML and CSS validation
+- Responsive layouts and 200% zoom
+- Keyboard navigation and visible focus
+- Internal links
+- Accessibility
+- Metadata
+- Lighthouse performance
 
-Responsive layouts and 200% zoom
+Image optimization improved the Lighthouse Performance score from **10 to 93**.
 
-Keyboard navigation and visible focus
-
-Internal links
-
-Accessibility
-
-Metadata
-
-Lighthouse performance
-
-Image optimization improved the Lighthouse Performance score from 10 to 93.
-
-Known Limitations
+## Known Limitations
 
 The contact form is not connected to a backend and does not currently submit messages.
 
-Author
+## Author
 
-Nour Sbeta
+Nour Sbeta  
 GIT 414 — Fall 2026
